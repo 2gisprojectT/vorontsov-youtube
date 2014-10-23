@@ -9,11 +9,12 @@ from selenium.webdriver.common.keys import Keys
 
 class YoutubeTest(TestCase):
 
-    def test_search(self):
+      def test_search(self):
         driver = webdriver.Firefox()
         driver.get("http://youtube.com/")
         assert 'YouTube' in driver.title
         elem = driver.find_element_by_id("masthead-search-term")
+        elem.send_keys("TheBroadwayShow")
         elem.send_keys("TheBroad")
         elem.send_keys("way")
         elem.send_keys('S')
@@ -26,6 +27,7 @@ class YoutubeTest(TestCase):
         elem3 = driver.find_element_by_class_name("subscribe-label")
         assert elem3.is_displayed()
         elem3.click()
+        driver.close()
 
 
 if __name__ == '__main__':
