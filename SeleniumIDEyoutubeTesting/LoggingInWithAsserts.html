@@ -4,59 +4,63 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://www.youtube.com/" />
-<title>TestCaseSubscribing</title>
+<title>LoggingInWithAsserts</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">TestCaseSubscribing</td></tr>
+<tr><td rowspan="1" colspan="3">LoggingInWithAsserts</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
 	<td>/</td>
+	<td>http://www.youtube.com/</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Один аккаунт. Весь мир Google! </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>qweqwe@mail.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>qweqweqeqweqwe</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=masthead-search-term</td>
-	<td>testing tools</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=masthead-search-term</td>
-	<td></td>
+	<td>id=Email</td>
+	<td>dreamscapesurface@gmail.com</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=search-btn</td>
+	<td>id=signIn</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Bigclassescom</td>
-	<td></td>
+	<td>assertText</td>
+	<td>link=Подписки</td>
+	<td>Подписки</td>
 </tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>xpath=(//button[@type='button'])[8]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForPopUp</td>
-	<td>_self</td>
-	<td>30000</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Bigclassescom</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//ul[@id='channel-navigation-menu']/li[2]/a/span</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>
